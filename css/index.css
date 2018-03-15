@@ -1,0 +1,8 @@
+#imgWrapper {
+    display: flex;
+}
+
+#imgWrapper img {
+    margin: auto;
+    max-width: 100%
+}

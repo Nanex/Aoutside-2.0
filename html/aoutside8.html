@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- imports propres à bootstrap -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-grid.min.css">
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows-dark.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-basic.min.css">
+
+<script src="https://use.fontawesome.com/d6ca8c9cba.js"></script>
+
+<script src="../dependencies/jQuery/jquery-3.2.1.min.js"></script>
+<script src="../dependencies/tether/tether.min.js"></script>
+<script src="../dependencies/bootstrap/bootstrap.min.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- page imports-->
+<!-- //////////////////////////////////////////////////////////////////// -->
+
+<link rel="stylesheet" href="../css/aoutside8.css">
+<link rel="stylesheet" href="../css/base.css">
+<title>Aoutside 8</title>
+</head>
+<body>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- script d'import du header/footer -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+	<script> 
+		$(function(){
+  		$("#headerFront").load("headerFront.html"); 
+  		$("#footerFront").load("footerFront.html"); 
+		});
+	</script>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- header importé -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+	<div id="headerFront">
+	</div>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- container for page content -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+
+	<div id="wrapperVideo">
+		<iframe id="vimeo" src="https://player.vimeo.com/video/232229829?autoplay=1" style="width:100%; height:100%; border:0;" allowfullscreen></iframe>
+	</div>
+
+		<div class="row justify-content-center" id="pageContent">
+
+		<div class="col-lg-12 col-xs-12">
+		<div class='container-fluid' id='reseauxSociaux'>
+					<a href="https://www.facebook.com/aoutsidefestival/" role="button" onclick="window.open(this.href); return false;"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/user/Bigmoneymakersrock" role="button" onclick="window.open(this.href); return false;"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a href="https://web.stagram.com/operationmaxipuissance" role="button" onclick="window.open(this.href); return false;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://officialmaxipuissance.tumblr.com/" role="button" onclick="window.open(this.href); return false;"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+				</div>
+		</div>
+
+			<div id='poème' class="col-sm-10 col-md-5 col-lg-5 col-xl-5">
+
+				<h2>AOUTSIDE 2017</h2> 
+				<p class="mosaique">
+						Des dents derrière des sourires<br/>
+						tant de perles dans des coquilles<br/>
+						de chair consciente. <br/>
+						Toutes animées, créant<br/>
+						Un fourmillement stellaire<br/>
+						Dans l'espace même de mes yeux clos.<br/>
+						Il y avait ici l'ambiance des temps futurs.<br/> 
+						Celle de la spiritualité concrète.<br/>
+						D'une utopie collective. <br/>
+						D'un vaisseau qui décolle.<br/>
+						Dans une main un spin idéal. <br/>
+						Dans l'autre un espace vacant.<br/>
+						Une affinité électronique et manuelle.<br/>
+						Maxi Puissance<br/>
+						Formée de l'Energie libre.<br/>
+						De ces petits morceaux d'or, <br/>
+						Qui atour d'un même point gravitent<br/>
+						Menant la construction d'un<br/>
+						Grand Cheval de Bois, <br/>
+						Contenant l'armée d'un monde<br/><br/>
+							Aimant.<br/>
+										EGG
+				</p>
+			</div>
+
+			<div class="col-sm-10 col-md-5 col-lg-5 col-xl-5" id="soundcloud">
+			<!-- width="420" height="315" -->
+
+				<div id='annonce' class="mosaique"><h3> Prix Libre avant 20h00 !</h3>
+				<p>5€ après !</p>
+				</div>
+
+				<div id='mosaique2'>
+	 				<iframe style="width:100%; height:100%; border:0;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/347153713&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+	 			<!-- <div>
+	 				<iframe width="640" height="360"
+					src="https://www.youtube.com/embed/DIjPUulPnXg">
+					</iframe>
+				</div> -->
+				<div id="youtube">
+				<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/amk2g-j0BW0" frameborder="0"></iframe> -->
+					<iframe
+						onload="javascript:this.style.height = this.contentWindow.document.body.scrollHeight + 'px';"
+						style="width:100%; height:100%; border:0; margin:0;"
+						src="https://www.youtube.com/embed/?listType=user_uploads&list=Bigmoneymakersrock">
+					</iframe>
+				</div>
+			</div> 
+		</div>
+
+		<!-- <div class="container" id="buttonContainer">		
+		<div class="row mosaique">
+			<div class="col-3">
+			</div>
+			<div class="col-6">
+			<p>Rejoignez Aoutside sur Facebook</p>
+			<a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/events/108507509757806/" role="button" onclick="window.open(this.href); return false;">Participez !</a>
+			</div>
+			<div class="col-3">
+			</div>
+		</div>
+		</div> -->
+
+	<script>
+    var player = new Vimeo.Player('wrapperVideo');
+
+    player.on('play', function() {
+        console.log('played the video!');
+    });
+
+    player.getVideoTitle().then(function(title) {
+        console.log('title:', title);
+    });
+
+    player.on('ended', function() {
+    	$("#wrapperVideo").fadeOut();
+    });
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+	var _paq = _paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//stats.zpl.zone/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '2']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+<!-- End Piwik Code -->
+
+</body>
+</html>
