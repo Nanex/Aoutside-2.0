@@ -28,19 +28,12 @@
 <title>Aoutside 8</title>
 </head>
 <body>
-<!-- //////////////////////////////////////////////////////////////////// -->
-<!-- script d'import du header/footer -->
-<!-- //////////////////////////////////////////////////////////////////// -->
-	<script> 
-		$(function(){
-  		$("#headerFront").load("headerFront.html"); 
-  		$("#footerFront").load("footerFront.html"); 
-		});
-	</script>
+
 <!-- //////////////////////////////////////////////////////////////////// -->
 <!-- header importé -->
 <!-- //////////////////////////////////////////////////////////////////// -->
 	<div id="headerFront">
+
 	</div>
 <!-- //////////////////////////////////////////////////////////////////// -->
 <!-- container for page content -->
@@ -160,6 +153,17 @@
 	})();
 </script>
 <!-- End Piwik Code -->
+
+<!-- Imports HTML jQuery -->
+
+	<script type="text/javascript"> 
+		$(function(){
+  		$('#headerFront').load("headerFront.html"); 
+  		$("#footerFront").load("footerFront.html"); 
+		});
+	</script>
+
+	<!-- End HTML Imports -->
 
 </body>
 </html>
