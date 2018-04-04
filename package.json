@@ -1,0 +1,22 @@
+{
+  "name": "aoutside",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nanex/Aoutside-2.0.git"
+  },
+  "author": "Noah Smiles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nanex/Aoutside-2.0/issues"
+  },
+  "homepage": "https://github.com/Nanex/Aoutside-2.0#readme",
+  "dependencies": {
+    "background-check": "git+https://github.com/kennethcachia/background-check.git"
+  }
+}

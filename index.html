@@ -19,6 +19,7 @@
 		<script src="dependencies/jQuery/jquery-3.2.1.min.js"></script>
 		<script src="dependencies/tether/tether.min.js"></script>
 		<script src="dependencies/bootstrap/bootstrap.min.js"></script>
+		<script src="node_modules/background-check/background-check.js"></script>
 		<!-- //////////////////////////////////////////////////////////////////// -->
 		<!-- page imports-->
 		<!-- //////////////////////////////////////////////////////////////////// -->
@@ -77,6 +78,14 @@
 				width: 100%;
 				font-size: 35px;
 				color: white;
+			}
+
+			.header .social .background--light li i {
+				color : black;
+			}
+
+			.header .social .background--light li i {
+				color : white;
 			}
 			.header .social a {
 				text-decoration: none;
@@ -143,6 +152,16 @@
 						width : 3px;
 						height: 100%;
 					}
+
+					      nav .menu .label.background--light {
+        color: black !important; }
+        nav .menu .label.background--light .cross:before, nav .menu .label.background--light .cross:after {
+          background: black !important; }
+      nav .menu .label.background--dark {
+        color: white !important; }
+        nav .menu .label.background--dark:before, nav .menu .label.background--dark:after {
+          background: white !important; }
+
 					nav.open .menu {
 						height: auto;
 						background: white;
@@ -185,7 +204,7 @@
 			</style>
 			<nav id="nav">
 				<div class="menu">
-					<div class="label">
+					<div class="label bg-check">
 						<!-- Checker back -->
 						<div class="cross closed"></div>
 						<span>Menu</span>
@@ -198,7 +217,7 @@
 					</ul>
 				</div>
 			</nav>
-			<ul class="social">
+			<ul class="social bg-check">
 				<!-- Checker le background - http://www.kennethcachia.com/background-check/ -->
 				<li class="social-network"><a href="https://soundcloud.com/operationmaxipuissance/sets/aoutside-infinite-compilation" role="button" onclick="window.open(this.href); return false;"><img src="dependencies/images/AO-Front1.svg" height="35px" width="35px"/></a></li>
 				<li class="social-network"><a href="https://www.facebook.com/aoutsidefestival/" role="button" onclick="window.open(this.href); return false;"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
@@ -279,6 +298,7 @@
 			<div class="home-bg-image" style='background-image: url("dependencies/images/AO-Back2.png");background-repeat:  no-repeat; background-origin: padding-box;'></div>
 			<div class="home-bg-image" style='background-image: url("dependencies/images/AO-Back4.jpg");background-repeat:  no-repeat; background-origin: padding-box;'></div>
 			<div class="home-bg-image" style='background-image: url("dependencies/images/AO-Back5.jpg");background-repeat:  no-repeat; background-origin: padding-box;'></div>
+			<div class="home-bg-image" style='background-image: url("dependencies/images/AO-Back3.jpg");background-repeat:  no-repeat; background-origin: padding-box;'></div>
 			<style>
 				.home-bg-images {
 					position: absolute;
@@ -328,7 +348,7 @@
 		<!-- End Piwik Code -->
 		
 		<!-- Script -->
-		<script type"text/javascript>
+		<script type="text/javascript">
 			$(document).ready(function() {
 				setInterval(function() {
 					if ($('body').attr('data-page') != 'home') {return false}
@@ -348,10 +368,15 @@
 			$(document).on('click', 'nav .label', function() {
 				$('nav').toggleClass('open');
 			});
-
-
 		</script>
 		<!-- Script -->
+
+		<script type="text/javascript">
+			BackgroundCheck.init({
+  				targets: '.bg-check',
+  				images: '.home-bg-image'
+  			});
+		</script>
 
 	</body>
 </html>
